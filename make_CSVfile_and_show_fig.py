@@ -7,7 +7,6 @@ import pandas as pd
 
 def func(z, z_start, z_rate, x_rate, x_b):#式．zが独立変数で，xが従属変数．
     x =  (( math.cosh( (z + z_start)/z_rate ) )/x_rate ) + x_b
-    #x =  ( math.cosh( -(z/z_rate ) + z_start)/x_rate ) + x_b
     return x
 
 def csv_save(csv_file):#x,y,zの形式で保存する．yは常に0になるようにした．
